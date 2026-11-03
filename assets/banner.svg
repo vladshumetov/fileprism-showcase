@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">FilePrism — online file converter</title>
+  <desc id="desc">FilePrism converts images in the browser and video, audio and documents on the server.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#070B18"/>
+      <stop offset="0.55" stop-color="#0D1734"/>
+      <stop offset="1" stop-color="#0A1024"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4F7BFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4F7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="prism" x1="780" y1="120" x2="1140" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B9CFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4F7BFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="780" y1="215" x2="1260" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <circle cx="1080" cy="120" r="260" fill="url(#glow)"/>
+  <circle cx="180" cy="360" r="200" fill="url(#glow)" opacity="0.35"/>
+
+  <!-- subtle grid -->
+  <g stroke="#8B9CFF" stroke-opacity="0.055" stroke-width="1">
+    <path d="M0 60H1280M0 120H1280M0 180H1280M0 240H1280M0 300H1280M0 360H1280"/>
+    <path d="M80 0V420M180 0V420M280 0V420M380 0V420M480 0V420M580 0V420M680 0V420M780 0V420M880 0V420M980 0V420M1080 0V420M1180 0V420"/>
+  </g>
+
+  <!-- incoming beam -->
+  <path d="M700 215H872" stroke="url(#beam)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="872" cy="215" r="4" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- prism -->
+  <path d="M960 120L1140 310H780L960 120Z" fill="url(#prism)" stroke="#8B9CFF" stroke-opacity="0.65" stroke-width="2"/>
+  <path d="M960 132L1124 300H796L960 132Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- refracted beams -->
+  <g stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M1005 210L1260 128" stroke="#FF5C7A" stroke-opacity="0.9"/>
+    <path d="M1010 215L1260 176" stroke="#FFB86B" stroke-opacity="0.9"/>
+    <path d="M1015 220L1260 224" stroke="#FFE66D" stroke-opacity="0.9"/>
+    <path d="M1010 225L1260 272" stroke="#6EE7B7" stroke-opacity="0.9"/>
+    <path d="M1005 230L1260 320" stroke="#67E8F9" stroke-opacity="0.9"/>
+    <path d="M1000 235L1260 368" stroke="#A78BFA" stroke-opacity="0.9"/>
+  </g>
+
+  <text x="80" y="70" fill="#6F7DA8" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="4">FILE CONVERTER · PRIVACY-FIRST</text>
+
+  <text x="80" y="164" fill="#F5F7FF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">FilePrism</text>
+  <text x="80" y="214" fill="#A9B7E8" font-family="Segoe UI, Arial, sans-serif" font-size="26">Convert anything. Keep it private.</text>
+  <text x="80" y="248" fill="#7C8BB8" font-family="Segoe UI, Arial, sans-serif" font-size="16">Images in your browser · video, audio and documents on the server.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle">
+    <rect x="80" y="292" width="64" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="112" y="312" fill="#C7D2FE">JPG</text>
+    <rect x="152" y="292" width="64" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="184" y="312" fill="#C7D2FE">PNG</text>
+    <rect x="224" y="292" width="76" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="262" y="312" fill="#C7D2FE">WEBP</text>
+    <rect x="308" y="292" width="68" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="342" y="312" fill="#C7D2FE">HEIC</text>
+    <rect x="384" y="292" width="60" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="414" y="312" fill="#C7D2FE">PDF</text>
+    <rect x="452" y="292" width="72" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="488" y="312" fill="#C7D2FE">DOCX</text>
+    <rect x="532" y="292" width="64" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="564" y="312" fill="#C7D2FE">MP4</text>
+    <rect x="604" y="292" width="58" height="30" rx="15" fill="#8B9CFF" fill-opacity="0.10" stroke="#8B9CFF" stroke-opacity="0.35"/>
+    <text x="633" y="312" fill="#C7D2FE">GIF</text>
+  </g>
+
+  <text x="1200" y="392" fill="#6F7DA8" font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="end">67 pairs · 18 guides · RU / EN</text>
+</svg>
