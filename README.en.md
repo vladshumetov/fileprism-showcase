@@ -37,23 +37,29 @@ FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/en-home.png" alt="FilePrism home page in English" width="100%">
+  <img src="screenshots/en-home.png" alt="FilePrism home page — desktop" width="100%">
 </p>
+<p align="center"><sub>Home page — desktop</sub></p>
 
 <table>
   <tr>
     <td width="50%">
-      <img src="screenshots/en-converter-light.png" alt="Converter in English, light theme" width="100%">
+      <img src="screenshots/en-converter-light.png" alt="Converter — desktop, light theme" width="100%">
     </td>
     <td width="50%">
-      <img src="screenshots/en-converter-dark.png" alt="Converter in English, dark theme" width="100%">
+      <img src="screenshots/en-converter-dark.png" alt="Converter — desktop, dark theme" width="100%">
     </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Converter — desktop, light theme</sub></td>
+    <td align="center"><sub>Converter — desktop, dark theme</sub></td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="screenshots/en-converter-mobile.png" alt="Converter in English on mobile" width="300">
+  <img src="screenshots/en-converter-mobile.png" alt="Converter — mobile" width="300">
 </p>
+<p align="center"><sub>Converter — mobile</sub></p>
 
 ## Why images stay in the browser
 

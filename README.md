@@ -39,23 +39,29 @@ FilePrism — это 67 пар форматов, 18 гайдов и 243 стра
 ## Скриншоты
 
 <p align="center">
-  <img src="screenshots/home-hero.png" alt="Главная страница FilePrism" width="100%">
+  <img src="screenshots/home-hero.png" alt="Главная страница FilePrism — ПК-версия" width="100%">
 </p>
+<p align="center"><sub>Главная страница — ПК-версия</sub></p>
 
 <table>
   <tr>
     <td width="50%">
-      <img src="screenshots/converter-light.png" alt="Конвертер, светлая тема" width="100%">
+      <img src="screenshots/converter-light.png" alt="Конвертер — ПК-версия, светлая тема" width="100%">
     </td>
     <td width="50%">
-      <img src="screenshots/converter-dark.png" alt="Конвертер, тёмная тема" width="100%">
+      <img src="screenshots/converter-dark.png" alt="Конвертер — ПК-версия, тёмная тема" width="100%">
     </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Конвертер — ПК, светлая тема</sub></td>
+    <td align="center"><sub>Конвертер — ПК, тёмная тема</sub></td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="screenshots/converter-mobile.png" alt="Конвертер на телефоне" width="300">
+  <img src="screenshots/converter-mobile.png" alt="Конвертер — мобильная версия" width="300">
 </p>
+<p align="center"><sub>Конвертер — мобильная версия</sub></p>
 
 ## Почему изображения остаются в браузере
 
