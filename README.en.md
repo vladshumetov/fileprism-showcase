@@ -10,25 +10,41 @@ An online file converter. Images are processed in the browser; video, audio and 
 
 FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. I built it around a simple idea: converting a file should not require an account, an install, or sending your photos to someone else’s server when the browser can do the job.
 
+## What's inside
+
+| Pairs | Guides | Hubs | Pages |
+|---:|---:|---:|---:|
+| 67 | 18 | 23 | 243 |
+
+```mermaid
+pie showData
+    title Pairs by category
+    "Images" : 26
+    "Video & audio" : 27
+    "Documents" : 14
+```
+
+26 pairs convert in the browser; 41 run on the server.
+
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/home-hero.png" alt="FilePrism home page" width="100%">
+  <img src="screenshots/en-home.png" alt="FilePrism home page in English" width="100%">
 </p>
 
 <table>
   <tr>
     <td width="50%">
-      <img src="screenshots/converter-light.png" alt="Converter, light theme" width="100%">
+      <img src="screenshots/en-converter-light.png" alt="Converter in English, light theme" width="100%">
     </td>
     <td width="50%">
-      <img src="screenshots/converter-dark.png" alt="Converter, dark theme" width="100%">
+      <img src="screenshots/en-converter-dark.png" alt="Converter in English, dark theme" width="100%">
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="screenshots/converter-mobile.png" alt="Converter on mobile" width="300">
+  <img src="screenshots/en-converter-mobile.png" alt="Converter in English on mobile" width="300">
 </p>
 
 ## Why images stay in the browser
@@ -68,6 +84,10 @@ Limits are sized for a small server: images up to 25 MB, video and audio up to 1
 - **A queue without heroics.** One worker, clear limits, timeouts and cleanup. On a small VPS that is more reliable than trying to do everything at once.
 
 ## Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,redis,docker,nginx,nodejs" alt="Next.js, React, TypeScript, Tailwind CSS, Redis, Docker, nginx, Node.js" />
+</p>
 
 Next.js 16, React 19, TypeScript and Tailwind CSS 4 on the front end. Redis and BullMQ for the queue. FFmpeg, LibreOffice, Poppler, pdf2docx and sharp for conversions. Docker Compose, nginx and certbot for deployment. Vitest and Playwright for tests.
 

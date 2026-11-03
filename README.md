@@ -12,9 +12,19 @@ FilePrism — это 67 пар форматов, 18 гайдов и 243 стра
 
 ## Что внутри
 
-<p align="center">
-  <img src="assets/stats.svg" alt="FilePrism в цифрах" width="100%">
-</p>
+| Пар | Гайдов | Хабов | Страниц |
+|---:|---:|---:|---:|
+| 67 | 18 | 23 | 243 |
+
+```mermaid
+pie showData
+    title Форматы по категориям
+    "Изображения" : 26
+    "Видео и аудио" : 27
+    "Документы" : 14
+```
+
+26 пар из 67 конвертируются в браузере, 41 — на сервере.
 
 67 пар — это не «все форматы мира», а те направления, которые действительно ищут: JPG в PNG, HEIC в JPG, PDF в DOCX, MP4 в GIF, XLSX в CSV и так далее. Под каждую пару есть отдельная страница, под каждый формат — хаб, а под частые вопросы — гайды.
 
@@ -76,6 +86,10 @@ API проверяет тип файла по сигнатуре, размер �
 - **Очередь без героизма.** Один воркер, понятные лимиты, таймауты и очистка. На слабом VPS это надёжнее, чем пытаться обработать всё сразу.
 
 ## Стек
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,redis,docker,nginx,nodejs" alt="Next.js, React, TypeScript, Tailwind CSS, Redis, Docker, nginx, Node.js" />
+</p>
 
 Next.js 16, React 19, TypeScript и Tailwind CSS 4 на фронте. Redis и BullMQ для очереди. FFmpeg, LibreOffice, Poppler, pdf2docx и sharp для конвертации. Docker Compose, nginx и certbot для запуска. Vitest и Playwright для тестов.
 
