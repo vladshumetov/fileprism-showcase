@@ -24,7 +24,7 @@ An online file converter. Images are processed in the browser; video, audio and 
 
 [Русский](README.md)
 
-FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. I built it around a simple idea: converting a file should not require an account, an install, or sending your photos to someone else’s server when the browser can do the job.
+FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. Converting a file does not require an account or an install, and photos stay on the device when the browser can handle the format.
 
 ## What's inside
 
@@ -83,13 +83,13 @@ The result sits in a shared volume. The client polls for progress and downloads 
 
 Limits are sized for a small server: images up to 25 MB, video and audio up to 100 MB and 5 minutes, documents up to 25 MB.
 
-## A few details that mattered
+## How it is built
 
-- **One conversion registry.** Routes, pages, limits and engine selection all come from it. Adding a pair is data and content, not a new page template.
-- **Content as data.** Pair pages and guides live in MDX and are validated at build time. A missing translation fails the build, which keeps the two languages honest.
-- **Isolated LibreOffice profiles.** Each job gets its own profile; otherwise concurrent conversions start fighting each other.
-- **Real MIME surprises.** AVI may be detected as `video/vnd.avi`, SVG is text, and some BMP variants are not readable by sharp directly. Those cases have careful fallbacks.
-- **A queue without heroics.** One worker, clear limits, timeouts and cleanup. On a small VPS that is more reliable than trying to do everything at once.
+- **One conversion registry.** Routes, pages, limits and engine selection are built on it. Adding a pair is data and content, not a new page template.
+- **Content as data.** Pair pages and guides live in MDX and are validated at build time. A missing translation fails the build.
+- **Isolated LibreOffice profiles.** Each job gets its own profile; otherwise concurrent conversions interfere with each other.
+- **MIME differences.** AVI may be detected as `video/vnd.avi`, SVG is a text format, and some BMP variants are not readable by sharp directly. Those cases have fallbacks.
+- **A single-worker queue.** One worker, limits, timeouts and cleanup. On a small VPS this is more reliable than processing everything in parallel.
 
 ## Stack
 
@@ -97,7 +97,7 @@ Next.js 16, React 19, TypeScript and Tailwind CSS 4 on the front end. Redis and 
 
 ## Contact
 
-Personal: **vladshumetov@gmail.com**  
+Contact: **vladshumetov@gmail.com**  
 Site support: **fileprism.support@gmail.com**  
 GitHub: [@vladshumetov](https://github.com/vladshumetov)
 
