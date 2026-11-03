@@ -6,6 +6,22 @@
 
 An online file converter. Images are processed in the browser; video, audio and documents on the server.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Docker_Compose-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose">
+  <img src="https://img.shields.io/badge/Redis_%2B_BullMQ-queue-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis and BullMQ">
+  <br>
+  <img src="https://img.shields.io/badge/pairs-67-8B5CF6?style=for-the-badge" alt="67 pairs">
+  <img src="https://img.shields.io/badge/guides-18-8B5CF6?style=for-the-badge" alt="18 guides">
+  <img src="https://img.shields.io/badge/hubs-23-8B5CF6?style=for-the-badge" alt="23 hubs">
+  <img src="https://img.shields.io/badge/pages-243-8B5CF6?style=for-the-badge" alt="243 pages">
+  <img src="https://img.shields.io/badge/languages-RU_%7C_EN-8B5CF6?style=for-the-badge" alt="RU and EN">
+  <img src="https://img.shields.io/badge/tests-67_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="67 tests">
+</p>
+
 [Русский](README.md)
 
 FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. I built it around a simple idea: converting a file should not require an account, an install, or sending your photos to someone else’s server when the browser can do the job.
@@ -15,14 +31,6 @@ FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English
 | Pairs | Guides | Hubs | Pages |
 |---:|---:|---:|---:|
 | 67 | 18 | 23 | 243 |
-
-```mermaid
-pie showData
-    title Pairs by category
-    "Images" : 26
-    "Video & audio" : 27
-    "Documents" : 14
-```
 
 26 pairs convert in the browser; 41 run on the server.
 
@@ -84,10 +92,6 @@ Limits are sized for a small server: images up to 25 MB, video and audio up to 1
 - **A queue without heroics.** One worker, clear limits, timeouts and cleanup. On a small VPS that is more reliable than trying to do everything at once.
 
 ## Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,redis,docker,nginx,nodejs" alt="Next.js, React, TypeScript, Tailwind CSS, Redis, Docker, nginx, Node.js" />
-</p>
 
 Next.js 16, React 19, TypeScript and Tailwind CSS 4 on the front end. Redis and BullMQ for the queue. FFmpeg, LibreOffice, Poppler, pdf2docx and sharp for conversions. Docker Compose, nginx and certbot for deployment. Vitest and Playwright for tests.
 

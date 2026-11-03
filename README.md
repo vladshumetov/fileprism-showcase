@@ -6,6 +6,22 @@
 
 Онлайн-конвертер файлов. Изображения обрабатываются прямо в браузере, видео, аудио и документы — на сервере.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Docker_Compose-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose">
+  <img src="https://img.shields.io/badge/Redis_%2B_BullMQ-queue-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis and BullMQ">
+  <br>
+  <img src="https://img.shields.io/badge/pairs-67-8B5CF6?style=for-the-badge" alt="67 pairs">
+  <img src="https://img.shields.io/badge/guides-18-8B5CF6?style=for-the-badge" alt="18 guides">
+  <img src="https://img.shields.io/badge/hubs-23-8B5CF6?style=for-the-badge" alt="23 hubs">
+  <img src="https://img.shields.io/badge/pages-243-8B5CF6?style=for-the-badge" alt="243 pages">
+  <img src="https://img.shields.io/badge/languages-RU_%7C_EN-8B5CF6?style=for-the-badge" alt="RU and EN">
+  <img src="https://img.shields.io/badge/tests-67_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="67 tests">
+</p>
+
 [English](README.en.md)
 
 FilePrism — это 67 пар форматов, 18 гайдов и 243 страницы на русском и английском. Я делал его вокруг одной простой мысли: конвертация не должна требовать аккаунта, установки программ и доверия к чужому серверу, если задачу можно решить на устройстве пользователя.
@@ -15,14 +31,6 @@ FilePrism — это 67 пар форматов, 18 гайдов и 243 стра
 | Пар | Гайдов | Хабов | Страниц |
 |---:|---:|---:|---:|
 | 67 | 18 | 23 | 243 |
-
-```mermaid
-pie showData
-    title Форматы по категориям
-    "Изображения" : 26
-    "Видео и аудио" : 27
-    "Документы" : 14
-```
 
 26 пар из 67 конвертируются в браузере, 41 — на сервере.
 
@@ -86,10 +94,6 @@ API проверяет тип файла по сигнатуре, размер �
 - **Очередь без героизма.** Один воркер, понятные лимиты, таймауты и очистка. На слабом VPS это надёжнее, чем пытаться обработать всё сразу.
 
 ## Стек
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,redis,docker,nginx,nodejs" alt="Next.js, React, TypeScript, Tailwind CSS, Redis, Docker, nginx, Node.js" />
-</p>
 
 Next.js 16, React 19, TypeScript и Tailwind CSS 4 на фронте. Redis и BullMQ для очереди. FFmpeg, LibreOffice, Poppler, pdf2docx и sharp для конвертации. Docker Compose, nginx и certbot для запуска. Vitest и Playwright для тестов.
 
