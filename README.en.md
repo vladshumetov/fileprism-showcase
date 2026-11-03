@@ -8,6 +8,8 @@ An online file converter. Images are processed in the browser; video, audio and 
 
 [Русский](README.md)
 
+FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. I built it around a simple idea: converting a file should not require an account, an install, or sending your photos to someone else’s server when the browser can do the job.
+
 ## Screenshots
 
 <p align="center">
@@ -29,37 +31,50 @@ An online file converter. Images are processed in the browser; video, audio and 
   <img src="screenshots/converter-mobile.png" alt="Converter on mobile" width="300">
 </p>
 
-## What it does
+## Why images stay in the browser
 
-- Converts 67 format pairs across images, video, audio and documents.
-- Photos stay in the browser when it can handle the format.
-- Video, audio and documents go through a queue and a dedicated worker.
-- Russian and English UI, light and dark themes, mobile layout.
-- No accounts. Files are deleted automatically.
+Photos are the most common case. If someone needs JPG to PNG or HEIC to JPG, sending the file to a server and back is often unnecessary. The browser can decode the image and draw it on a Canvas, so the conversion happens locally and the server is only used when the browser cannot handle the format.
 
-## How it works
+It is faster, uses less traffic and keeps personal photos on the device. HEIC goes through heic2any; everything else uses Canvas and WebCodecs. If a format such as TIFF or SVG cannot be handled in the browser, the server path takes over.
 
-Images are decoded and re-encoded in the browser with Canvas, WebCodecs and heic2any. If the browser cannot handle a format, the file is sent to the server.
+## How the server works
 
-Everything else goes through nginx → Next.js API → Redis/BullMQ → worker. The worker runs FFmpeg, LibreOffice, Poppler, sharp or pdf2docx one job at a time. Results live in a shared volume and are removed after download or by TTL.
+Video, audio and documents need FFmpeg, LibreOffice and Poppler, so those files go to the server:
+
+`nginx → Next.js API → Redis/BullMQ → worker`
+
+The API checks the file signature, size and limits, stores the upload and creates a job. The worker takes one job at a time and runs the right tool: FFmpeg for video and audio, LibreOffice for DOCX/XLSX/PPTX, Poppler for PDF, sharp for images and ICO, pdf2docx for PDF to DOCX.
+
+The result sits in a shared volume. The client polls for progress and downloads the file. Everything is removed after download or by TTL.
 
 <p align="center">
   <img src="assets/architecture.svg" alt="FilePrism architecture" width="100%">
 </p>
 
+## What it supports
+
+- **Images:** JPG, PNG, WebP, HEIC, AVIF, BMP, TIFF, SVG and ICO. Most of them convert in the browser.
+- **Video and audio:** MP4, MOV, WebM, MKV, AVI, GIF, MP3, M4A, WAV and OGG.
+- **Documents:** PDF, DOCX, XLSX, PPTX, HTML, CSV, TXT and images to PDF.
+
+Limits are sized for a small server: images up to 25 MB, video and audio up to 100 MB and 5 minutes, documents up to 25 MB.
+
+## A few details that mattered
+
+- **One conversion registry.** Routes, pages, limits and engine selection all come from it. Adding a pair is data and content, not a new page template.
+- **Content as data.** Pair pages and guides live in MDX and are validated at build time. A missing translation fails the build, which keeps the two languages honest.
+- **Isolated LibreOffice profiles.** Each job gets its own profile; otherwise concurrent conversions start fighting each other.
+- **Real MIME surprises.** AVI may be detected as `video/vnd.avi`, SVG is text, and some BMP variants are not readable by sharp directly. Those cases have careful fallbacks.
+- **A queue without heroics.** One worker, clear limits, timeouts and cleanup. On a small VPS that is more reliable than trying to do everything at once.
+
 ## Stack
 
-- **Web:** Next.js 16, React 19, TypeScript, Tailwind CSS 4
-- **Queue:** Redis, BullMQ
-- **Video and audio:** FFmpeg
-- **Documents:** LibreOffice, Poppler, pdf2docx, pdf-lib
-- **Images:** sharp, Canvas/WebCodecs, heic2any
-- **Infrastructure:** Docker Compose, nginx, certbot
-- **Tests:** Vitest, Playwright
+Next.js 16, React 19, TypeScript and Tailwind CSS 4 on the front end. Redis and BullMQ for the queue. FFmpeg, LibreOffice, Poppler, pdf2docx and sharp for conversions. Docker Compose, nginx and certbot for deployment. Vitest and Playwright for tests.
 
 ## Contact
 
-Made by [@vladshumetov](https://github.com/vladshumetov).  
-Email: **fileprism.support@gmail.com**
+Personal: **vladshumetov@gmail.com**  
+Site support: **fileprism.support@gmail.com**  
+GitHub: [@vladshumetov](https://github.com/vladshumetov)
 
 <p align="center"><sub>© 2026 FilePrism</sub></p>
