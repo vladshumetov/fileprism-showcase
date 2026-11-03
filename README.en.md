@@ -16,21 +16,21 @@ An online file converter. Images are processed in the browser; video, audio and 
   <br>
   <img src="https://img.shields.io/badge/pairs-67-8B5CF6?style=for-the-badge" alt="67 pairs">
   <img src="https://img.shields.io/badge/guides-18-8B5CF6?style=for-the-badge" alt="18 guides">
-  <img src="https://img.shields.io/badge/hubs-23-8B5CF6?style=for-the-badge" alt="23 hubs">
-  <img src="https://img.shields.io/badge/pages-243-8B5CF6?style=for-the-badge" alt="243 pages">
+  <img src="https://img.shields.io/badge/hubs-25-8B5CF6?style=for-the-badge" alt="25 hubs">
+  <img src="https://img.shields.io/badge/pages-247-8B5CF6?style=for-the-badge" alt="247 pages">
   <img src="https://img.shields.io/badge/languages-RU_%7C_EN-8B5CF6?style=for-the-badge" alt="RU and EN">
-  <img src="https://img.shields.io/badge/tests-67_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="67 tests">
+  <img src="https://img.shields.io/badge/tests-72_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="72 tests">
 </p>
 
 [Русский](README.md)
 
-FilePrism covers 67 format pairs, 18 guides and 243 pages in Russian and English. Converting a file does not require an account or an install, and photos stay on the device when the browser can handle the format.
+FilePrism covers 67 format pairs, 18 guides and 247 pages in Russian and English. Converting a file does not require an account or an install, and photos stay on the device when the browser can handle the format.
 
 ## What's inside
 
 | Pairs | Guides | Hubs | Pages |
 |---:|---:|---:|---:|
-| 67 | 18 | 23 | 243 |
+| 67 | 18 | 25 | 247 |
 
 26 pairs convert in the browser; 41 run on the server.
 

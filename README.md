@@ -16,21 +16,21 @@
   <br>
   <img src="https://img.shields.io/badge/pairs-67-8B5CF6?style=for-the-badge" alt="67 pairs">
   <img src="https://img.shields.io/badge/guides-18-8B5CF6?style=for-the-badge" alt="18 guides">
-  <img src="https://img.shields.io/badge/hubs-23-8B5CF6?style=for-the-badge" alt="23 hubs">
-  <img src="https://img.shields.io/badge/pages-243-8B5CF6?style=for-the-badge" alt="243 pages">
+  <img src="https://img.shields.io/badge/hubs-25-8B5CF6?style=for-the-badge" alt="25 hubs">
+  <img src="https://img.shields.io/badge/pages-247-8B5CF6?style=for-the-badge" alt="247 pages">
   <img src="https://img.shields.io/badge/languages-RU_%7C_EN-8B5CF6?style=for-the-badge" alt="RU and EN">
-  <img src="https://img.shields.io/badge/tests-67_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="67 tests">
+  <img src="https://img.shields.io/badge/tests-72_passed-2EA043?style=for-the-badge&logo=vitest&logoColor=white" alt="72 tests">
 </p>
 
 [English](README.en.md)
 
-FilePrism — это 67 пар форматов, 18 гайдов и 243 страницы на русском и английском. Конвертация не требует аккаунта и установки программ, а изображения обрабатываются на устройстве пользователя, когда браузер поддерживает формат.
+FilePrism — это 67 пар форматов, 18 гайдов и 247 страниц на русском и английском. Конвертация не требует аккаунта и установки программ, а изображения обрабатываются на устройстве пользователя, когда браузер поддерживает формат.
 
 ## Что внутри
 
 | Пар | Гайдов | Хабов | Страниц |
 |---:|---:|---:|---:|
-| 67 | 18 | 23 | 243 |
+| 67 | 18 | 25 | 247 |
 
 26 пар из 67 конвертируются в браузере, 41 — на сервере.
 
